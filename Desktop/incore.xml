@@ -2,6 +2,6 @@
        <Incore desc="Incore buffer sharing on $C2 on vols Volname">
            <clients>$C2</clients>
            <volumes>$N1/$A1/$ALL</volumes>
-           <Snapshotname>snap1</height>
+           <Snapshotname>snap1</Snapshotname>
        </Incore>
 </incore>
