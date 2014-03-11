@@ -1,0 +1,66 @@
+<html>
+
+<body>
+
+
+<center>
+<img src="car.png"/>
+<br/>
+<b>Car Specs:</b>
+<br/>
+<script>
+
+
+var car = new Object();
+
+
+car.name = "Duster";
+car.fuel = 100;
+car.wheels = 4;
+car.motion = "stopped";
+
+
+document.write("<p id=\"name\">My car\'s name is "+car.name+"</p>");
+document.write("<p id=\"fuel\">My car\'s Fuel is "+car.fuel+"</p>");
+document.write("<p id=\"wheels\">My car has "+car.wheels+" wheels</p>");
+document.write("<p id=\"motion\">My car is "+car.motion+"</p>");
+
+car.move = function()
+{
+car.fuel--;
+car.motion = "moving";
+alert("Your "+car.name+" is moving");
+document.getElementById("motion").innerHTML = "My car is "+car.motion;
+document.getElementById("fuel").innerHTML = "My car\'s fuel is "+car.fuel;
+}
+
+car.stop = function()
+{
+car.motion = "stopped";
+alert("Your "+car.name+" is stopped");
+document.getElementById("motion").innerHTML = "My car is "+car.motion;
+document.getElementById("fuel").innerHTML = "My car\'s fuel is "+car.fuel;
+}
+
+function status()
+{
+alert("Motion: "+car.motion);
+alert("Fuel: "+car.fuel);
+}
+
+</script>
+<br/>
+<input type="button" value="Start" onclick="car.move()"/>
+
+
+<input type="button" value="Stop" onclick="car.stop()"/>
+
+
+<input type="button" value="status" onclick="status()"/>
+<center/>
+</body>
+
+
+
+
+</html>

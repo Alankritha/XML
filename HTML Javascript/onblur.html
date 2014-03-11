@@ -1,0 +1,40 @@
+
+<html>
+<body>
+
+<!--Javascript on focus event-->
+
+ <input type="text" onfocus="change()" onblur="change2()" />
+
+<p id="status">Idle</p>
+
+
+<script type="text/javascript">
+
+function change()
+{
+
+var g;
+
+g = document.getElementById('status');
+g.innerHTML = 'typing...';
+
+}
+
+function change2()
+{
+
+var h;
+
+h = document.getElementById('status');
+h.innerHTML = 'Idle';
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>

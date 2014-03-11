@@ -1,0 +1,39 @@
+
+<html>
+<body>
+
+<!--Javascript on mouse over event-->
+
+<img src="D:/Arun/Personal/Images/1.jpg" id="img" onmouseout="change2()" onmouseover="change()" width="600" height="400"/> <br>
+
+<p>Move the mouse on the image to change it</p>
+
+
+<script type="text/javascript">
+
+function change()
+{
+
+var i;
+
+i = document.getElementById('img');
+i.src = 'D:/Arun/Personal/Images/2.jpg';
+
+}
+
+function change2()
+{
+
+var j;
+
+j = document.getElementById('img');
+j.src = 'D:/Arun/Personal/Images/1.jpg';
+
+}
+
+</script>
+
+
+
+</body>
+</html>

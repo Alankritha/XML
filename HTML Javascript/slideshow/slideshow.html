@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<body background="bg.jpg">
+<script>
+
+function next()
+{
+	
+	if(typeof n == 'undefined')
+		{
+		n=0;
+		}
+	var i;
+	i=8;
+	n=Math.abs(n)
+	n++;
+	n=n%i;	
+	
+	element=document.getElementById('myimage');
+	element.src= n+".jpg";
+	document.getElementById('para').innerHTML= n+1;
+	}
+	
+	
+function back()
+{
+	
+	if(typeof n == 'undefined')
+		{
+		n=0;
+		}
+	var i;
+	i=8;
+	n--;
+	if(n<0)
+	{
+	n=i+n;
+	}
+	n=n%i;
+	
+	
+	element=document.getElementById('myimage');
+	element.src= Math.abs(n)+".jpg";
+	document.getElementById('para').innerHTML= Math.abs(n)+1;
+	
+	}
+</script>
+<center>
+<table>
+
+<tr> <td  align = 'center' colspan=3><p><font face="Georgia, Arial, Garamond" size=5 color=#FFFFFF>SlideShow of Images</font></p></td>
+</tr>
+
+<tr>
+<td colspan=3><img id="myimage" src="0.jpg" width="850" height="500" border=5></td>
+</tr>
+
+<tr>
+<td align = 'center'><button type="button" onclick="back()">Back</button></td>
+
+<td align = 'center'><p id="para" style= " font-family: Georgia, Arial, Garamond; color: white; size : 5;">1</p></td>
+
+<td align = 'center'><button type="button" onclick="next()">Next</button></td>
+</tr>
+
+</table>
+
+</center>
+</body>
+</html>

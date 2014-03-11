@@ -1,0 +1,36 @@
+
+<html>
+<body>
+
+<!--Javascript on change event-->
+
+ <select onchange="change()" id="option">
+	<option value="">Gender</option>
+	<option value="male">Male</option>
+	<option value="female">Female</option> 
+ </select>
+
+<p>Your selected Gender is : <span id="gender"></span></p>
+
+
+<script type="text/javascript">
+
+function change()
+{
+
+var o,g;
+
+o = document.getElementById('option').value;
+
+g = document.getElementById('gender');
+g.innerHTML = o;
+
+}
+
+
+</script>
+
+
+
+</body>
+</html>

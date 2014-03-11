@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function changeImage()
+{
+	if(typeof n == 'undefined' && n= null)
+		{
+		var n;
+		n=0;
+		}
+	var i;
+	i=8;
+	n++;
+	n=n%i;	
+	element=document.getElementById('myimage');
+	element.src="n.jpg";
+}
+</script>
+<center>
+<img id="myimage" src="1.jpg" width="800" height="500">
+<br>
+
+<button type="button" onclick="changeImage()">Next</button>
+
+</center>
+</body>
+</html>

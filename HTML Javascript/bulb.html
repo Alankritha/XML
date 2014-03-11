@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage');
+if (element.src.match("bulb2"))
+  {
+  element.src="bulb1.jpeg";
+  }
+else
+  {
+  element.src="bulb2.jpeg";
+  }
+}
+</script>
+<center>
+<img id="myimage" src="bulb1.jpeg" width="800" height="500">
+<br>
+
+<button type="button" onclick="changeImage()">Switch</button>
+
+<p>Click the Switch button to turn on/off the light</p>
+</center>
+</body>
+</html>
